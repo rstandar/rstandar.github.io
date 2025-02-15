@@ -1,7 +1,32 @@
+
 <!DOCTYPE html>
-<html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anna & Rasmus bröllopssida</title>
+¨   <link rel="stylesheet" href="assets/style.css">
+</head>
+<body class="hidden">
+
+    <h1>Välkommen till Anna & Rasmus bröllopssida!</h1>
+    <div type="input-with-submit">
+        <input type="password" id="passwordInput" onsubmit="checkPassword()" placeholder="Skriv in lösenord">
+        <button onclick="checkPassword()">Logga in</button>
+    </div>
+
+    <h3> Lösenord finns i inbjudan. *</h3>
+
+
+    <p style="position: fixed; bottom: 0;">* Har du tappat bort inbjudan så kan du maila <a href="mailto:rasmus.standar@gmail.com">rasmus.standar@gmail.com</a> eller <a href="mailto:anna.linnea.lindblom@outlook.com">anna.linnea.lindblom@outlook.com</a> </p>
+    <script>
+        document.getElementById("passwordInput").addEventListener("keydown", function(event) {
+            if (event.key === "Enter") {
+                checkPassword();
+            }
+        });
+    </script>
+
+    <script src="assets/scripts/loginUtils.js"></script>
 </body>
 </html>
