@@ -27,14 +27,9 @@ async function checkPassword() {
     if (hashedUserInput === correctHash) {
         localStorage.setItem("token", hashedUserInput);
         
-        window.location.href = "loggedInPages/home/"
+        window.location.href = "/loggedInPages/home/"
     } else {
         alert("Incorrect password!");
-        //window.location.href = "https://github.com";
     }
 }
 
-// Check authentication on page load
-if (localStorage.getItem("token") !== correctHash) {
-    window.location.replace("index.html");
-}

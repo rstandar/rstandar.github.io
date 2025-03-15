@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap");
+
+.amatic-sc-regular {
+  font-family: "Amatic SC", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.amatic-sc-bold {
+  font-family: "Amatic SC", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: url("images/bg.png") no-repeat center center/cover;
+  color: #008000;
+  font-family: "Amatic SC", serif;
+  text-align: center;
+}
+
+/* Title styling */
+h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+
+/* For screens smaller than 800px (tablets and below) */
+@media screen and (max-width: 800px) {
+  body {
+    width: 70%;
+    padding: 0 15%;
+  }
+
+  h1 {
+    font-size: 2em; /* Smaller title on smaller screens */
+  }
+
+  input {
+    font-size: 1em; /* Smaller input text */
+    padding: 8px;  /* Smaller input padding */
+  }
+
+  button {
+    font-size: 1em; /* Smaller button text */
+    padding: 8px 16px; /* Smaller button size */
+  }
+}
+
+/* For screens smaller than 480px (phones and smaller devices) */
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 1.5em; /* Even smaller title on phones */
+  }
+
+  input {
+    font-size: 0.9em; /* Even smaller input text */
+    padding: 6px;  /* Even smaller input padding */
+  }
+
+  button {
+    font-size: 0.9em; /* Even smaller button text */
+    padding: 6px 12px; /* Even smaller button size */
+  }
+}
