@@ -13,7 +13,7 @@
 }
 
 body {
-  margin: 0;
+  margin-top: 10%;
   padding: 0;
   height: 100vh;
   display: flex;
@@ -26,22 +26,34 @@ body {
   text-align: center;
 }
 
+.text-body{
+  max-width: 50%;
+}
+
 /* Title styling */
 h1 {
   font-size: 3em;
   margin-bottom: 20px;
 }
 
+h2 {
+  font-size: 1.2em;
+}
+
 
 /* For screens smaller than 800px (tablets and below) */
 @media screen and (max-width: 800px) {
-  body {
-    width: 70%;
-    padding: 0 15%;
-  }
 
   h1 {
     font-size: 2em; /* Smaller title on smaller screens */
+  }
+
+  h2 {
+    font-size: 1em;
+  }
+
+  .text-body{
+    max-width: 80%;
   }
 
   input {
@@ -53,6 +65,18 @@ h1 {
     font-size: 1em; /* Smaller button text */
     padding: 8px 16px; /* Smaller button size */
   }
+
+  header {
+    padding: 5px 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;  /* Ensures it stays above other elements */
+  }
+
+  .nav-links {
+    gap: 5px;
+  }
 }
 
 /* For screens smaller than 480px (phones and smaller devices) */
@@ -61,8 +85,20 @@ h1 {
     font-size: 1.5em; /* Even smaller title on phones */
   }
 
+  .text-body{
+    max-width: 80%;
+  }
+
+  h2 {
+    font-size: 0.8em;
+  }
+
+  p {
+    font-size: 0.8em; /* Even smaller paragraph text */
+  }
+
   input {
-    font-size: 0.9em; /* Even smaller input text */
+    font-size: 0.8em; /* Even smaller input text */
     padding: 6px;  /* Even smaller input padding */
   }
 
@@ -70,4 +106,39 @@ h1 {
     font-size: 0.9em; /* Even smaller button text */
     padding: 6px 12px; /* Even smaller button size */
   }
+
+  .nav-links {
+    gap: 10px;
+  }
 }
+
+/* Header styling*/
+.nav-links a {
+  color: #008000;
+  text-decoration: none;
+}
+
+.nav-links a:hover {
+  color: #008000;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+header {
+  position: fixed;  
+  top: 0;
+  left: 0;
+  max-height: 10%;
+  width: 100%; 
+  background: #ffcd03b3;
+  padding: 5px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;  /* Ensures it stays above other elements */
+}
+
+
