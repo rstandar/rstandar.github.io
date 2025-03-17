@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap");
+
+.input-with-submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Password input field */
+input {
+  padding: 10px;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  margin-right: 10px;
+}
+
+/* Submit button */
+button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 5px;
+  background: #0080009c;
+  color: antiquewhite;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #ffaa00;
+}
+
+/* For screens smaller than 768px (tablets and below) */
+@media screen and (max-width: 768px) {
+    h1 {
+      font-size: 2em; /* Smaller title on smaller screens */
+    }
+  
+    input {
+      font-size: 1em; /* Smaller input text */
+      padding: 8px;  /* Smaller input padding */
+    }
+  
+    button {
+      font-size: 1em; /* Smaller button text */
+      padding: 8px 16px; /* Smaller button size */
+    }
+  }
+  
+  /* For screens smaller than 480px (phones and smaller devices) */
+  @media screen and (max-width: 480px) {
+    h1 {
+      font-size: 1.5em; /* Even smaller title on phones */
+    }
+  
+    input {
+      font-size: 0.9em; /* Even smaller input text */
+      padding: 6px;  /* Even smaller input padding */
+    }
+  
+    button {
+      font-size: 0.9em; /* Even smaller button text */
+      padding: 6px 12px; /* Even smaller button size */
+    }
+  }
+
