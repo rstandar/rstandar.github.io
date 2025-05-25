@@ -28,6 +28,7 @@ body {
 
 .text-body{
   max-width: 50%;
+  text-align: left; 
 }
 
 /* Title styling */
@@ -39,6 +40,8 @@ h1 {
 h2 {
   font-size: 1.2em;
 }
+
+
 
 
 /* For screens smaller than 800px (tablets and below) */
